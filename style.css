@@ -1,0 +1,182 @@
+@font-face { font-family: Robot; src: url('Font/RobotRegular-ALR9m.ttf'); } 
+
+body {
+    padding: 1rem;
+    border-width: 5px;
+    border-style: solid;
+    border-image: 
+      linear-gradient(
+        to bottom, 
+        rgb(255, 0, 0), 
+        rgba(0, 0, 0, 0)
+      ) 1 100%;
+    background-image:url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+h1{
+    font-size: 62px;
+    background: linear-gradient(rgb(252, 14, 14), rgb(109, 3, 248));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.9px rgb(0, 255, 13);
+}
+
+#Page1{
+    font-family: Robot;
+    font-size: xx-large;
+    color: red;
+    width: 8em
+}
+a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    background-color: rgb(255, 219, 219);
+    padding: 12px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    transition: background-color 1000ms linear;
+    transition: border-radius 1s;
+    -webkit-animation: cssAnimation 5s forwards; 
+    animation: cssAnimation 5s forwards;
+}
+@keyframes cssAnimation {
+    0%   {opacity: 0;}
+    90%  {opacity: 1;}
+    100% {opacity: 1;}
+}
+@-webkit-keyframes cssAnimation {
+    0%   {opacity: 0;}
+    90%  {opacity: 1;}
+    100% {opacity: 1;}
+    
+}
+a:hover{
+    background-color: rgb(250, 119, 119);
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+#selection, #round, #computerScore, #userScore, #computer, #result{
+    color:red;
+    font-size: 150%;
+}
+
+#rock{
+    color:transparent;
+    padding: 30px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/stone.png);
+    transition: 1s;
+}
+#rock:hover{
+    color:transparent;
+    padding: 30px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/stone2.png);
+}
+#paper{
+    color:transparent;
+    padding: 30px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/paper.png);
+    transition: 1s;
+}
+#paper:hover{
+    color:transparent;
+    padding: 30px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/paper2.png);
+}
+#scissor{
+    color:transparent;
+    padding: 30px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/scissor.jpeg);
+    transition: 1s;
+}
+#scissor:hover{
+    color:transparent;
+    padding: 30px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/scissor2.png);
+}
+
+.roundbox{
+    
+    border: 2px solid;
+    border-image: 
+      linear-gradient(
+        to bottom, 
+        rgb(255, 0, 0), 
+        rgba(0, 0, 0, 0)
+      ) 1 100%;
+    position: relative;
+    box-sizing: border-box;
+    width: 160px;
+    height: 80px;
+    padding: 20px;
+    color:rgb(255, 255, 255);
+}
+
+.compscorebox{
+    float: left;
+    border: 2px solid;
+    border-image: 
+      linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 0),
+        rgb(60, 255, 0)
+      ) 1 100%;
+    position: relative;
+    box-sizing: border-box;
+    width: 160px;
+    height: 80px;
+    padding: 20px;
+    color:rgb(20, 245, 0);
+}
+
+.userscorebox{
+    float: right;
+    border: 2px solid;
+    border-image: 
+      linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 0),
+        rgb(60, 255, 0)
+      ) 1 100%;
+    position: relative;
+    box-sizing: border-box;
+    width: 160px;
+    height: 80px;
+    padding: 20px;
+    color:rgb(20, 245, 0);
+}
+
+#btn{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    background-color: rgb(255, 219, 219);
+    padding: 12px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    transition: background-color 1000ms linear;
+    transition: border-radius 1s;
+    -webkit-animation: cssAnimation 5s forwards; 
+    animation: cssAnimation 5s forwards;
+}
+#btn:hover{
+    background-color: rgb(250, 119, 119);
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
